@@ -1,2 +1,2 @@
 # stepik_final_task
-Final task for course https://stepik.org/lesson/238819
+Final task for course https://stepik.org/course/575
