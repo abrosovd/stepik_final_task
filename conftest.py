@@ -4,7 +4,7 @@ from selenium.webdriver.chrome.options import Options
 
 
 def pytest_addoption(parser):
-    parser.addoption('--language', action='store', default="ru", help="Enter language: ru, en, es, etc")
+    parser.addoption('--language', action='store', default="en", help="Enter language: ru, en, es, etc")
 
 
 @pytest.fixture(scope="function")
