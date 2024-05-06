@@ -5,6 +5,7 @@ class BasePageLocators:
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
     BASKET_LINK = (By.CSS_SELECTOR, ".btn-group a.btn.btn-default")
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
 
 
 class MainPageLocators:
@@ -14,6 +15,9 @@ class MainPageLocators:
 class LoginPageLocators:
     BUTTON_LOGIN = (By.CSS_SELECTOR, '[name = "login_submit"]')
     BUTTON_REGISTRATION = (By.CSS_SELECTOR, '[name = "registration_submit"]')
+    FIELD_NEW_USER_EMAIL = (By.CSS_SELECTOR, '#id_registration-email')
+    FIELD_NEW_USER_PASSWORD1 = (By.CSS_SELECTOR, '#id_registration-password1')
+    FIELD_NEW_USER_PASSWORD2 = (By.CSS_SELECTOR, '#id_registration-password2')
 
 
 class ProductPageLocators:
@@ -21,7 +25,7 @@ class ProductPageLocators:
     PRODUCT_PRICE = (By.CSS_SELECTOR, "p.price_color")
     BUTTON_ADD_TO_BASKET = (By.CLASS_NAME, "btn-add-to-basket")
     NOTIFICATION_ADDED_TO_BASKET = (By.XPATH, '//div//strong[text()="{0}"]')
-    NOTIFICATION_BASKET_PRICE = (By.XPATH, '//div//strong[text()="{0}"]')
+    NOTIFICATION_BASKET_PRICE = (By.CSS_SELECTOR, '.alertinner>p>strong')
 
 
 class BasketPageLocators:
